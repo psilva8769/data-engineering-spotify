@@ -13,6 +13,13 @@ This project is designed to perform Extract, Transform, and Load (ETL) operation
 - AWS Account (for S3 bucket access)
 - Relevant Python packages: `spotipy`, `pandas`, `boto3` (Install via `pip install spotipy pandas boto3` if you so desire to do some local testing)
 
+## Technologies Stack
+- Python 3.x
+- AWS Cloud
+  - Lambda
+  - S3 (Simple Storage Service)
+- Spotify Web API
+
 ## Configuration
 Set up the necessary credentials for Spotify API and AWS S3 in environment variables or within the scripts as applicable:
 - Spotify API: Client ID, Client Secret, and Redirect URI.
