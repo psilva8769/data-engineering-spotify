@@ -3,6 +3,9 @@
 ## Overview
 This project is designed to perform Extract, Transform, and Load (ETL) operations on data from Spotify. It focuses on extracting data from Spotify's API, transforming this data into a structured format, and then loading it either into an AWS S3 bucket or into Excel files for further analysis.
 
+![Data Engineering Project Architecture Diagram - Spotify](https://github.com/psilva8769/data-engineering-spotify/assets/19256166/2c081521-b948-4520-86d8-2ac2b4a87e04)
+
+
 ## Components
 1. **SpotifyDataETL.py**: This Python script handles the extraction of data from the Spotify API, its transformation, and uploading the processed data to AWS S3.
 2. **SpotifyDataETL-TO-EXCEL.ipynb**: A Jupyter notebook that performs similar operations as the Python script but directs the output into structured Excel files for easy accessibility and analysis.
