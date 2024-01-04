@@ -42,4 +42,4 @@ git clone https://github.com/Eckesaht/data-engineering-spotify.git
 - SpotifyDataETL-TO-EXCEL.ipynb: Open this Jupyter notebook in your Jupyter environment and run the cells to perform the ETL process and save the data into Excel files.
 
 ## Contributing
-Contributions to this project are welcome. Please ensure to follow the best coding practices and adhere to the existing code structure.
+Contributions to this project are welcome. Please ensure to follow good coding practices, at least to some extent and adhere to the existing code structure.
