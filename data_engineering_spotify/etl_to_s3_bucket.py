@@ -8,7 +8,6 @@ from datetime import datetime
 from io import StringIO
 import pandas as pd
 
-
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
     bucket = 'data-engineering-project-eckesaht'
@@ -36,7 +35,6 @@ def lambda_handler(event, context):
     load_to_s3(s3, bucket, artist_key, artist_data)
     load_to_s3(s3, bucket, song_key, song_data)
 
-
 # EXTRACT
 def setup_spotify_client():
     """
@@ -54,7 +52,6 @@ def fetch_playlist_data(sp_client, playlist_uri):
     Fetches data for a given Spotify playlist URI using the provided Spotify client.
     """
     return sp_client.playlist_tracks(playlist_uri)
-    
 
 # TRANSFORM
 def transform_album_data(track_items):
@@ -105,12 +102,9 @@ def transform_song_data(track_items):
         for item in track_items if 'track' in item
     ]
 
-
 # LOAD
 def load_to_s3(s3_client, bucket, key, data):
     """
     Uploads data to the specified S3 bucket with the given key.
     """
     s3_client.put_object(Bucket=bucket, Key=key, Body=json.dumps(data))
-
-
