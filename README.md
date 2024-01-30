@@ -38,8 +38,5 @@ git clone https://github.com/Eckesaht/data-engineering-spotify.git
 3. Do it!
 
 ## Usage
-- SpotifyDataETL.py: Run this script to fetch data from the Spotify API, process it and upload to the configured AWS S3 bucket.
-- SpotifyDataETL-TO-EXCEL.ipynb: Open this Jupyter notebook in your Jupyter environment and run the cells to perform the ETL process and save the data into Excel files.
-
-## Contributing
-Contributions to this project are welcome. Please ensure to follow good coding practices, at least to some extent and adhere to the existing code structure.
+- etl_to_s3_bucket.py: Run this script to fetch data from the Spotify API, process it and upload to the configured AWS S3 bucket.
+- etl_to_excel.ipynb: Open this Jupyter notebook in your Jupyter environment and run the cells to perform the ETL process and save the data into Excel files.
